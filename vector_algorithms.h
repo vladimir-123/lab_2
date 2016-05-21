@@ -15,7 +15,7 @@ std::vector<int> TrueGenerateRandomVector(size_t fSize, int fMin, int fMax);
 std::ostream& operator<< (std::ostream& os, const std::vector<int>& v);
 int LinearSearch(const std::vector<int>& numbers, int value);
 void BubbleSort(std::vector<int>& fVector, const bool reverse = 0);
-bool CheckSort(const std::vector<int>& fVector, const bool reverse = 0);
+bool CheckSort(const std::vector<int>& fVector);
 int BinarySearch(const std::vector<int>& numbers, const int value); // нужно будет поменять тип возвр. знач.
 
 #endif
