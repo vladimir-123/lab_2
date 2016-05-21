@@ -7,15 +7,15 @@
 #include <ctime> // time
 #include <random>
 #include <cmath>
+#include <utility>
 
 class SizeZero {};
 void CheckEmpty(int fSize);
-std::vector<int> GenerateRandomVector(size_t fSize, int fMin, int fMax);
-std::vector<int> TrueGenerateRandomVector(size_t fSize, int fMin, int fMax);
+std::vector<int> GenerateMyRandomVector(size_t fSize, int fMin, int fMax);
 std::ostream& operator<< (std::ostream& os, const std::vector<int>& v);
 int LinearSearch(const std::vector<int>& numbers, int value);
-void BubbleSort(std::vector<int>& fVector, const bool reverse = 0);
+void BubbleSort(std::vector<int>& fVector);
 bool CheckSort(const std::vector<int>& fVector);
-int BinarySearch(const std::vector<int>& numbers, const int value); // нужно будет поменять тип возвр. знач.
+int BinarySearch(const std::vector<int>& numbers, const int value);
 
 #endif
